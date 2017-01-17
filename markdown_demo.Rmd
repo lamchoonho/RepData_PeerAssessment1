@@ -1,0 +1,33 @@
+My first R markdown file
+===========================
+
+This is my first R markdown file.
+
+Here, we're going load some data.
+
+```{r}
+library(datasets)
+data(airquality)
+summary(airquality)
+```
+
+Let's first make a pairs plot of the data.
+
+```{r}
+pairs(airquality)
+```
+
+Here's a regression model of ozone on wind, solar radiation, and temperature.
+
+```{r}
+library(stats)
+fit <- lm(Ozone ~ Wind + Solar.R + Temp, data = airquality)
+summary(fit)
+```
+
+
+Here's an unordered:
+
+* First element
+
+* Second element
